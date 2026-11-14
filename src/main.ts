@@ -50,7 +50,7 @@ async function bootstrap() {
     console.log(`Swagger API documentation is running on ${mainUrl}/api`);
   }
 
-  await app.listen(port);
+  await app.listen(port, '0.0.0.0');
   console.log(`Server is listening on ${mainUrl}`);
 }
 
